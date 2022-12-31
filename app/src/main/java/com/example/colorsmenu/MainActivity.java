@@ -10,8 +10,23 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+/**
+ * Main activity.
+
+ *  @author	Nisim Doron Krief <nisimandroi@gmail.com>
+ *  @version	1.1
+ *  @since	29/12/2022 (the date of the package the class was added)
+ *  Program that uses menu to change the colors of the screen
+
+ */
 public class MainActivity extends AppCompatActivity {
+    /**
+     * The ConstraintLayout Cl.
+     */
     ConstraintLayout cl;
+    /**
+     * The Intent Si.
+     */
     Intent si;
 
     @Override
@@ -38,6 +53,11 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+    /**
+     * Pressing the button and applying the intent.
+     *
+     * @param view the view
+     */
     public void Go(View view) {
         si = new Intent(this, MainActivity2.class);
         startActivity(si);

@@ -10,8 +10,17 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+/**
+ * Main activity 2.
+ */
 public class MainActivity2 extends AppCompatActivity {
+    /**
+     * The ConstraintLayout Cl 2.
+     */
     ConstraintLayout cl2;
+    /**
+     * Getting the Intent Gi.
+     */
     Intent gi = getIntent();
     public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.main, menu);
@@ -50,6 +59,11 @@ public class MainActivity2 extends AppCompatActivity {
         return true;
     }
 
+    /**
+     * Return to the previous screen.
+     *
+     * @param view the view
+     */
     public void Return(View view) {
         finish();
     }
